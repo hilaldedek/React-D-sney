@@ -1,8 +1,11 @@
-import { Button, TextField } from '@mui/material';
+import { Box, Button, TextField } from '@mui/material';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router';
 import Card from '../../components/Card/Card';
+import "./Home.scss";
+
+
 const Home = () => {
+    
     const[veri,setVeri]=useState("");
     const[char,setChar]=useState("");
  
@@ -27,24 +30,24 @@ const Home = () => {
 console.log(veri);
 console.log(char);
   return (
-    <div>
-        <div >
-            <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => setVeri(e.target.value)}/>
-            <Button variant="contained" color="success" onClick={handleSubmit} >Search</Button>
-        </div>
+    <Box>
+        <Box className="search">
+            <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
+            <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"}} onClick={handleSubmit} >Search</Button>
+        </Box>
         
         {!char && (
-           <div>
+           <Box>
             <h1>char yok</h1>
-           </div>
+           </Box>
         )}
         {char?.length === 0 && (
-            <div>
+            <Box>
                 <h1>bir şey girmediniz</h1>
-            </div>
+            </Box>
         )}
         {char?.length > 0 && <Card char={char}/>}
-    </div>
+    </Box>
   )
 }
 

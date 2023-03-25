@@ -1,11 +1,10 @@
 import React from 'react'
-import { useLocation, useNavigate } from 'react-router';
+import { useLocation} from 'react-router';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import TvIcon from '@mui/icons-material/Tv';
 import VideogameAssetOutlinedIcon from '@mui/icons-material/VideogameAssetOutlined';
 import "./Detail.scss";
-import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
-import { Button } from '@mui/material';
+
 
 const Details = () => {
   const {state}=useLocation();

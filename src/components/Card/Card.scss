@@ -1,0 +1,28 @@
+.cardstyle{
+  
+  display: flex;
+  flex-direction: column;
+  margin:1rem 1rem;
+  padding: 0.5rem;
+  background-color:#ECF2FF;
+  
+  .imgStyle{
+    width: 15rem;
+    height: auto;
+    display: block;
+    margin: auto;
+    
+  }
+  .detailButton{
+    background-color: #FFACAC ;
+    width: 5rem;
+    display: block;
+    margin: auto;
+    
+  }
+}
+.allStyle{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
