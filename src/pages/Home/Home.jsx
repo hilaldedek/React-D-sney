@@ -30,13 +30,13 @@ const Home = () => {
 console.log(veri);
 console.log(char);
   return (
-    <Box>
+    <Box className="all">
         <Box className="search">
-            <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
+            <TextField id="outlined-basic" label="Enter an item" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
             <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"}} onClick={handleSubmit} >Search</Button>
         </Box>
         
-        {!char && (
+        {/* {!char && (
            <Box>
             <h1>char yok</h1>
            </Box>
@@ -45,7 +45,7 @@ console.log(char);
             <Box>
                 <h1>bir şey girmediniz</h1>
             </Box>
-        )}
+        )} */}
         {char?.length > 0 && <Card char={char}/>}
     </Box>
   )

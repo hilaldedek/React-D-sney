@@ -1,3 +1,16 @@
-.navStyle{
-    background-color: #FFACAC;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.allNav{
+    background-color: aqua;
+    .font{
+    font-family: 'Dancing Script', cursive;
 }
+    .button{
+        font-family: 'Dancing Script', cursive;
+    }
+    .button:hover{
+        background-color: #ffc4c4;
+    }
+    
+}
+

@@ -5,10 +5,13 @@
   margin:1rem 1rem;
   padding: 0.5rem;
   background-color:#ECF2FF;
+  width: 20rem;
+  height: auto;
+  
   
   .imgStyle{
     width: 15rem;
-    height: auto;
+    height: 20rem;
     display: block;
     margin: auto;
     
@@ -19,10 +22,15 @@
     display: block;
     margin: auto;
     
+    
   }
 }
 .allStyle{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
+}
+.name{
+  text-align: center;
 }

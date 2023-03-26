@@ -1,8 +1,9 @@
 .divstyle{
     display: flex;
     align-items: center;
+    text-align: center;
 }
-.div{
-    display: flex;
-    justify-content: center;
+.divImg{
+    display: block;
+    margin:3rem auto;
 }

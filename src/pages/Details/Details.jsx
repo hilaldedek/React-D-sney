@@ -4,47 +4,45 @@ import SlideshowIcon from '@mui/icons-material/Slideshow';
 import TvIcon from '@mui/icons-material/Tv';
 import VideogameAssetOutlinedIcon from '@mui/icons-material/VideogameAssetOutlined';
 import "./Detail.scss";
+import { Box, Typography } from '@mui/material';
 
 
 const Details = () => {
   const {state}=useLocation();
   console.log("state geldi mi?: ",state);
   return (
-    <div>
-      <img src={state.imageUrl} alt="" className='div' />
-      <div>
-        <h1>{state.name}</h1>
-      </div>
+    <Box>
+      <img src={state.imageUrl} alt="imagechar" className='divImg'/>
+      <Box >
+        <Typography variant='h2' sx={{textAlign:"center"}}>{state.name}</Typography>
+      </Box>
       {state.films.length>0 && (
-        <h3>Films:</h3>
+        <Typography variant='h5'>Films:</Typography>
       )}
       {state?.films.map((film,index)=>(
-        <div className='divstyle' key={index}>
-          <SlideshowIcon/>
-          <p>{film}</p>
-        </div>
+        <Box key={index}>
+          <Typography><SlideshowIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}}/>{film}</Typography>
+        </Box>
       ))}
       {state.tvShows.length>0 && (
-        <h3>Tv Shows:</h3>
+        <Typography variant='h5'>Tv Shows:</Typography>
       )}
       {state?.tvShows.map((show,index)=>(
-          <div className='divstyle' key={index}>
-            <TvIcon/>
-            <p>{show}</p>
-          </div>
+          <Box key={index}>
+            <Typography><TvIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}}/>{show}</Typography>
+          </Box>
       ))}
       {state.videoGames.length>0 && (
-        <h3>Video Games:</h3>
+        <Typography variant='h5'>Video Games:</Typography>
       )}
       {state?.videoGames.map((game,index)=>(
-        <div className='divstyle' key={index}>
-          <VideogameAssetOutlinedIcon/>
-          <p>{game}</p>
-        </div>
+        <Box key={index}>
+          <Typography><VideogameAssetOutlinedIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}}/>{game}</Typography>
+        </Box>
       ))}
       
       
-    </div>
+    </Box>
   )
 }
 

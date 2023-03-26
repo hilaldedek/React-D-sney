@@ -13,7 +13,7 @@ const Card = ({char}) => {
                 <Box key={index} className="cardstyle">
                     <img src={karakter?.imageUrl
  || defaultimage} alt="img" className='imgStyle'/>
-                    <h1>{karakter?.name}</h1>
+                    <h1 className='name'>{karakter?.name}</h1>
                     <Button variant="contained" className="detailButton "onClick={()=>navigate("/detail",{state:karakter,replace:false})} >View Detail</Button>
                 </Box>
 
