@@ -4,9 +4,11 @@
   flex-direction: column;
   margin:1rem 1rem;
   padding: 0.5rem;
-  background-color:#ECF2FF;
+  background-color:#e7e6e6d4;
   width: 20rem;
   height: auto;
+  border: 2px #751e1ed4 ;
+  
   
   
   .imgStyle{
@@ -21,7 +23,9 @@
     width: 5rem;
     display: block;
     margin: auto;
-    
+    .detailButton:hover{
+      background-color: #ffc4c4;
+    }
     
   }
 }

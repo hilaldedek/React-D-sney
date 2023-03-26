@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 .divstyle{
     display: flex;
     align-items: center;
-    text-align: center;
+    
 }
 .divImg{
     display: block;
     margin:3rem auto;
+}
+.accordion{
+   margin-top: 1rem;
+   display: grid;
+   place-items: center;
+}
+.header{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    color: #f99090;
+}
+.charName{
+    font-family: 'Abril Fatface', cursive;
+    color: #e1a8f0;
+}
+.detailFont{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
 }

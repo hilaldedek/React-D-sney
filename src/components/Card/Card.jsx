@@ -10,7 +10,7 @@ const Card = ({char}) => {
     <Box className="allStyle">
         {char?.map((karakter,index)=>{
             return(
-                <Box key={index} className="cardstyle">
+                <Box key={index} className="cardstyle" sx={{border:"2px solid #cacacad3",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
                     <img src={karakter?.imageUrl
  || defaultimage} alt="img" className='imgStyle'/>
                     <h1 className='name'>{karakter?.name}</h1>
