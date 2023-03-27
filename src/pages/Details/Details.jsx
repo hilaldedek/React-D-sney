@@ -18,7 +18,7 @@ const Details = () => {
     <Box>
       <img src={state.imageUrl} alt="imagechar" className='divImg'/>
       <Box >
-        <Typography variant='h2' sx={{textAlign:"center"}} className="charName">{state.name}</Typography>
+        <Typography variant='h2' sx={{textAlign:"center",fontFamily:"Abril Fatface",color:"#dbb8ff"}} className="charName">{state.name}</Typography>
       </Box>
       <Box className="accordion">
 {state.films.length>0 && (
@@ -28,14 +28,14 @@ const Details = () => {
           aria-controls="panel1a-content"
           id="panel1a-header" sx={{backgroundColor:"#ffacac92"}}
         >   
-        <Typography variant='h5' className='header'>Films:</Typography>
+        <Typography variant='h5' sx={{fontFamily:"Abril Fatface",fontSize:"2rem",color:"#f99090"}}>Films:</Typography>
       
         </AccordionSummary>
         <AccordionDetails>
           {state?.films.map((film,index)=>(
         <Box key={index} className="divstyle">
           <SlideshowIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}} />
-          <Typography className='detailFont'>{film}</Typography>
+          <Typography sx={{fontFamily:"Dosis",fontSize:"1.2rem"}}>{film}</Typography>
         </Box>
       ))}
         </AccordionDetails>
@@ -48,13 +48,13 @@ const Details = () => {
           aria-controls="panel1a-content"
           id="panel1a-header" sx={{backgroundColor:"#ffacac92"}}
         >
-        <Typography variant='h5' className='header' >Tv Shows:</Typography>
+        <Typography variant='h5' sx={{fontFamily:"Abril Fatface",fontSize:"2rem",color:"#f99090"}}>Tv Shows:</Typography>
         </AccordionSummary>
         <AccordionDetails>
           {state?.tvShows.map((show,index)=>(
           <Box key={index} className="divstyle">
             <TvIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}} />
-            <Typography className='detailFont'>{show}</Typography>
+            <Typography sx={{fontFamily:"Dosis",fontSize:"1.2rem"}}>{show}</Typography>
           </Box>
       ))}
         </AccordionDetails>
@@ -67,13 +67,13 @@ const Details = () => {
           aria-controls="panel1a-content"
           id="panel1a-header" sx={{backgroundColor:"#ffacac92"}}
         >
-          <Typography variant='h5' className='header'>Video Games:</Typography>
+          <Typography variant='h5' sx={{fontFamily:"Abril Fatface",fontSize:"2rem",color:"#f99090"}}>Video Games:</Typography>
         </AccordionSummary>
         <AccordionDetails >
           {state?.videoGames.map((game,index)=>(
         <Box key={index} className="divstyle">
           <VideogameAssetOutlinedIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}}/>
-          <Typography className='detailFont'>{game}</Typography>
+          <Typography sx={{fontFamily:"Dosis",fontSize:"1.2rem"}}>{game}</Typography>
         </Box>
       ))}
         </AccordionDetails>

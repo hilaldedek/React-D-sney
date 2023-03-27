@@ -1,19 +1,24 @@
-import { Box, Button, TextField } from '@mui/material';
+import { Box, Button, ImageList, ImageListItem, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react'
 import Card from '../../components/Card/Card';
 import "./Home.scss";
+import photo from "../../assets/background.jpeg";
+import {data} from "../../helper/data";
+import Photo from '../../components/photo/Photo';
 
 
 const Home = () => {
-    
+
     const[veri,setVeri]=useState("");
     const[char,setChar]=useState("");
+
  
     const handleSubmit=(e)=>{
         e.preventDefault();
         getCharacters();
      
     }
+   
     const getCharacters = async function(){
         const url=`https://api.disneyapi.dev/character?name=${veri}`;
         try{
@@ -32,20 +37,21 @@ console.log(char);
   return (
     <Box className="all">
         <Box className="search">
-            <TextField id="outlined-basic" label="Enter an item" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
-            <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"}} onClick={handleSubmit} >Search</Button>
+            <TextField className='input' id="outlined-basic" label="Enter an item" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
+            <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"
+    ,fontSize:"1.1rem"}} onClick={handleSubmit} >Search</Button>
         </Box>
         
-        {/* {!char && (
+        {!char && (
            <Box>
-            <h1>char yok</h1>
+            {data.map((item,index)=><Photo {...item} key={index}/>)}
            </Box>
         )}
         {char?.length === 0 && (
             <Box>
-                <h1>bir şey girmediniz</h1>
+                <Typography sx={{textAlign:"center",fontSize:"2rem",fontFamily:"Dancing Script",color:"#954343"}}>...Character not found...</Typography>
             </Box>
-        )} */}
+        )}
         {char?.length > 0 && <Card char={char}/>}
     </Box>
   )

@@ -4,7 +4,7 @@ import developer from "../../assets/programmer.png";
 import "./About.scss";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { hover } from '@testing-library/user-event/dist/hover';
+
 
 const About = () => {
   return (
