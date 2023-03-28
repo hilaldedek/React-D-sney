@@ -15,8 +15,9 @@ const Home = () => {
     const handleSubmit=(e)=>{
         e.preventDefault();
         getCharacters();
+        
     }
-    toast.error('🦄 Wow so easy!', {
+    toast.error('Aranan değer bulunamadı', {
         position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -44,20 +45,21 @@ console.log(veri);
 console.log(char);
   return (
     <Box className="all">
-        <Box className="search">
-            <TextField className='input' id="outlined-basic" label="Enter an item" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
+        <Box className="search" >
+            <TextField id="outlined-basic"label="Enter an item" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
             <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"
     ,fontSize:"1.1rem"}} onClick={handleSubmit} >Search</Button>
         </Box>
-        
-        {!char && (
-           <Box sx={{display:"block",margin:"auto"}}>
+        <Box sx={{display:"block",margin:"auto"}}>
             <ImageList sx={{ width: "auto", height: "auto"}} variant="woven" cols={3} gap={8}>
             {data.map((item,index)=><Photo {...item} key={index}/>)}
 </ImageList>
            </Box>
+        
+        {/* {!char && (
+           
         )}
-        {char?.length === 0 && (
+        {veri?.length === 0 && (
                 <ToastContainer
 position="bottom-center"
 autoClose={5000}
@@ -71,7 +73,7 @@ pauseOnHover
 theme="light"
 />
 
-        )}
+        )} */}
         {char?.length > 0 && <Card char={char}/>}
     </Box>
   )
