@@ -19,10 +19,7 @@
     
   }
   .detailButton{
-    background-color: #FFACAC ;
-    width: 5rem;
-    display: block;
-    margin: auto;
+
     .detailButton:hover{
       background-color: #ffc4c4;
     }
@@ -34,7 +31,4 @@
     flex-wrap: wrap;
     justify-content: center;
     
-}
-.name{
-  text-align: center;
 }

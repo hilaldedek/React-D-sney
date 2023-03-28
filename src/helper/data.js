@@ -20,7 +20,7 @@ export const data = [
     },
     {
       id: 5,
-      image: "https://i.hurimg.com/i/hdn/75/0x0/5aa10544d3806c25541af273.jpg",
+      image: "https://i.pinimg.com/236x/17/19/19/171919dd7aa2a4b0b1a03a32a9d7c46f.jpg",
     },
     {
       id: 6,
@@ -34,7 +34,7 @@ export const data = [
     },
     {
       id: 8,
-      image: "https://lp-cms-production.imgix.net/2020-11/GettyRF_494057771.jpg",
+      image: "https://i.pinimg.com/236x/68/ca/07/68ca07e192ca2e2871a7735faffdb699.jpg",
     },
     {
       id: 9,
