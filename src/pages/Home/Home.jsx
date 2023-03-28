@@ -1,8 +1,7 @@
-import { Box, Button, ImageList, ImageListItem, TextField, Typography } from '@mui/material';
+import { Box, Button,TextField, Typography } from '@mui/material';
 import React, { useState } from 'react'
 import Card from '../../components/Card/Card';
 import "./Home.scss";
-import photo from "../../assets/background.jpeg";
 import {data} from "../../helper/data";
 import Photo from '../../components/photo/Photo';
 
