@@ -10,6 +10,7 @@ import logo from "../../assets/disneyland.png";
 
 
 
+
 const Navbar = () => {
   const navigate=useNavigate();
 
@@ -19,10 +20,11 @@ const Navbar = () => {
       <AppBar position="static" sx={{backgroundColor:"#FFACAC"}}>
         <Toolbar >
           <img src={logo} alt="logo" className='logo'/>
-          <Typography variant="h3" component="div" sx={{ flexGrow: 1,color:"#fc7676"}} className='font'>
+          <Typography variant='h3' component="div" sx={{ flexGrow: 1,color:"#fc7676",textDecoration:"none",fontFamily: 'Dancing Script'}}>
             Disney
           </Typography>
-          <Button sx={{color:"#fc7676",fontSize:"1.2rem"}} onClick={()=>navigate("/about")} className='button'>About</Button>
+          <Button sx={{color:"#fc7676",fontSize:"1.2rem",fontFamily: 'Abril Fatface'}} onClick={()=>navigate("/about")} className='button'>About</Button>
+          
         </Toolbar>
       </AppBar>
     </Box>

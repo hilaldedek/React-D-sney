@@ -13,7 +13,7 @@ const Photo = (data) => {
         src={`${image}?w=161&fit=crop&auto=format`}
         srcSet={`${image}?w=161&fit=crop&auto=format&dpr=2 2x`}
         alt="photolist"
-        loading="lazy"
+        loading="lazy" 
       />
     </ImageListItem>
 

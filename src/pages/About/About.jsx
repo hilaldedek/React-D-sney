@@ -11,7 +11,7 @@ const About = () => {
     <Box>
       <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"5rem"}}>
         <img src={developer} alt='developer' className='dev'/>
-      <Typography className='coded'>
+      <Typography className='coded' sx={{fontFamily: 'Dosis'}}>
         Coded by Hilal Dedek
       </Typography>
       </Box>

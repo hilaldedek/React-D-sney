@@ -16,7 +16,7 @@ const Details = () => {
   console.log("state geldi mi?: ",state);
   return (
     <Box>
-      <img src={state.imageUrl} alt="imagechar" className='divImg'/>
+      <img src={state?.imageUrl} alt="imagechar" className='divImg'/>
       <Box >
         <Typography variant='h2' sx={{textAlign:"center",fontFamily:"Abril Fatface",color:"#dbb8ff"}} className="charName">{state.name}</Typography>
       </Box>

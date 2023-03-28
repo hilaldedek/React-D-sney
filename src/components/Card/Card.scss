@@ -1,34 +1,15 @@
 .cardstyle{
-  
-  display: flex;
-  flex-direction: column;
-  margin:1rem 1rem;
-  padding: 0.5rem;
-  background-color:#e7e6e6d4;
-  width: 20rem;
-  height: auto;
-  border: 2px #751e1ed4 ;
-  
-  
-  
   .imgStyle{
     width: 15rem;
     height: 20rem;
     display: block;
     margin: auto;
-    
   }
   .detailButton{
-
     .detailButton:hover{
       background-color: #ffc4c4;
     }
     
   }
 }
-.allStyle{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
+

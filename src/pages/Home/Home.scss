@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 .search{
-    margin: 5rem auto;
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    position: relative;
-    .button{
-        margin-top: 0.5rem;
-        font-family: 'Abril Fatface', cursive;
-    }
     .button:hover{
         background-color: #ffc4c4;
     }
