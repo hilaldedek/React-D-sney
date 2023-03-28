@@ -12,10 +12,10 @@ const Card = ({char}) => {
         justifyContent:"center"}}>
         {char?.map((karakter,index)=>{
             return(
-                <Box key={index} className="cardstyle" sx={{border:"2px solid #cacacad3",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",backgroundColor:"#dfc0ff",display: "flex",
+                <Box key={index} className="cardstyle" sx={{border:"2px solid #cacacad3",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",backgroundColor:"#e1c6fb7d",display: "flex",
                 flexDirection: "column",
                 margin:"1rem 1rem",
-                padding: "0.5rem", width:"20rem",height:"auto"}}>
+                paddingTop: "1.5rem",paddingBottom: "1.5rem", width:"20rem",height:"auto"}}>
                     <img src={karakter?.imageUrl
  || defaultimage} alt="img"className='imgStyle'/>
                     <Typography variant="h4" sx={{textAlign:"center",fontFamily:"Abril Fatface",marginTop:"0.7rem",marginBottom:"0.7rem",color:"#c083fe",fontSize:"2rem"}}>{karakter?.name}</Typography>

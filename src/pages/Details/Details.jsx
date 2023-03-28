@@ -20,7 +20,9 @@ const Details = () => {
       <Box >
         <Typography variant='h2' sx={{textAlign:"center",fontFamily:"Abril Fatface",color:"#dbb8ff"}} className="charName">{state.name}</Typography>
       </Box>
-      <Box className="accordion">
+      <Box sx={{marginTop: "1rem",
+   display: "grid",
+   placeItems: "center"}}>
 {state.films.length>0 && (
       <Accordion sx={{width:"50%" , marginTop:"1rem"}}>
         <AccordionSummary
@@ -33,7 +35,7 @@ const Details = () => {
         </AccordionSummary>
         <AccordionDetails>
           {state?.films.map((film,index)=>(
-        <Box key={index} className="divstyle">
+        <Box key={index} className="divstyle" >
           <SlideshowIcon sx={{color:"#bb80fa",marginRight:"0.5rem"}} />
           <Typography sx={{fontFamily:"Dosis",fontSize:"1.2rem"}}>{film}</Typography>
         </Box>
