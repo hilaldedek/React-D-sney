@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React-Disney/static/css/main.2ae49a6a.css",
+    "main.js": "/React-Disney/static/js/main.eabab9f3.js",
+    "static/media/default.png": "/React-Disney/static/media/default.56f87970123138e89078.png",
+    "static/media/disneyland.png": "/React-Disney/static/media/disneyland.ef90025f9890748cb1f0.png",
+    "static/media/programmer.png": "/React-Disney/static/media/programmer.bb600859a40276ac1f2d.png",
+    "index.html": "/React-Disney/index.html",
+    "main.2ae49a6a.css.map": "/React-Disney/static/css/main.2ae49a6a.css.map",
+    "main.eabab9f3.js.map": "/React-Disney/static/js/main.eabab9f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ae49a6a.css",
+    "static/js/main.eabab9f3.js"
+  ]
+}
