@@ -11,6 +11,9 @@ const Home = () => {
 
     const[veri,setVeri]=useState("");
     const[char,setChar]=useState("");
+    const inputFunction=(input)=>{
+        setVeri(input);
+    }
     const handleSubmit=(e)=>{
         e.preventDefault();
         getCharacters();
@@ -29,8 +32,6 @@ const Home = () => {
             console.log(error);
         }  
     } 
-console.log(veri);
-console.log(char);
   return (
     <Box className="all">
         <Box className="search" sx={{margin: "5rem auto",
@@ -38,7 +39,7 @@ console.log(char);
     flexDirection: "column",
     width: "15rem",
     position: "relative"}} >
-            <TextField id="outlined-basic"label="Enter an item" variant="outlined" onChange={(e) => setVeri(e.target.value)} />
+            <TextField id="outlined-basic"label="Enter an item" variant="outlined" onChange={(e) =>inputFunction(e.target.value)} />
             <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"
     ,fontSize:"1.1rem",fontFamily: 'Abril Fatface',marginTop: "0.5rem"}} onClick={handleSubmit} >Search</Button>
         </Box>

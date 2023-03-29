@@ -11,6 +11,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
+
 const Details = () => {
   const {state}=useLocation();
   console.log("state geldi mi?: ",state);
@@ -18,7 +19,7 @@ const Details = () => {
     <Box>
       <img src={state?.imageUrl} alt="imagechar" className='divImg'/>
       <Box >
-        <Typography variant='h2' sx={{textAlign:"center",fontFamily:"Abril Fatface",color:"#dbb8ff"}} className="charName">{state.name}</Typography>
+        <Typography variant='h2' sx={{textAlign:"center",fontFamily:"Abril Fatface",color:"#dbb8ff"}}>{state.name}</Typography>
       </Box>
       <Box sx={{marginTop: "1rem",
    display: "grid",

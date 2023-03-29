@@ -3,7 +3,6 @@ import React from 'react';
 
 
 const Photo = (data) => {
-    console.log("ne geldi", data);
     const {image} = data;
   return (
     <Box >
