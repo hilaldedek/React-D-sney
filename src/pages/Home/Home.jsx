@@ -39,7 +39,7 @@ const Home = () => {
     flexDirection: "column",
     width: "15rem",
     position: "relative"}} >
-            <TextField id="outlined-basic"label="Enter an item" variant="outlined" onChange={(e) =>inputFunction(e.target.value)} />
+            <TextField id="outlined-basic"label="Enter a Disney character" variant="outlined" onChange={(e) =>inputFunction(e.target.value)} />
             <Button variant="contained" className='button' sx={{backgroundColor:"#FFACAC"
     ,fontSize:"1.1rem",fontFamily: 'Abril Fatface',marginTop: "0.5rem"}} onClick={handleSubmit} >Search</Button>
         </Box>
